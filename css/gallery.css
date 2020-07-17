@@ -1,0 +1,155 @@
+/*gallery container*/
+#gallery {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: auto;
+	grid-gap: 10px;
+	grid-template-areas:
+		"img1 img2 img3"
+		"img4 img5 img6"
+		"img7 img8 img9"
+		"img10 img11 img12"
+		"img13 img14 img15";
+}
+#gallery .gallery-img {
+	width: 100%;
+	height: 295px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	cursor: pointer;
+}
+/* images  */
+#gallery .img1 {
+	grid-area: img1;
+	background-image: url("../images/small/galerija/img1.jpg");
+}
+#gallery .img2 {
+	grid-area: img2;
+	background-image: url("../images/small/galerija/img2.jpg");
+}
+#gallery .img3 {
+	grid-area: img3;
+	background-image: url("../images/small/galerija/img3.jpg");
+}
+#gallery .img4 {
+	grid-area: img4;
+	background-image: url("../images/small/galerija/img4.jpg");
+}
+#gallery .img5 {
+	grid-area: img5;
+	background-image: url("../images/small/galerija/img5.jpg");
+}
+#gallery .img6 {
+	grid-area: img6;
+	background-image: url("../images/small/galerija/img6.jpg");
+}
+#gallery .img7 {
+	grid-area: img7;
+	background-image: url("../images/small/galerija/img7.jpg");
+}
+#gallery .img8 {
+	grid-area: img8;
+	background-image: url("../images/small/galerija/img8.jpg");
+}
+#gallery .img9 {
+	grid-area: img9;
+	background-image: url("../images/small/galerija/img9.jpg");
+}
+#gallery .img10 {
+	grid-area: img10;
+	background-image: url("../images/small/galerija/img10.jpg");
+}
+#gallery .img11 {
+	grid-area: img11;
+	background-image: url("../images/small/galerija/img11.jpg");
+}
+#gallery .img12 {
+	grid-area: img12;
+	background-image: url("../images/small/galerija/img12.jpg");
+}
+#gallery .img13 {
+	grid-area: img13;
+	background-image: url("../images/small/galerija/img13.jpg");
+}
+#gallery .img14 {
+	grid-area: img14;
+	background-image: url("../images/small/galerija/img14.jpg");
+}
+#gallery .img15 {
+	grid-area: img15;
+	background-image: url("../images/small/galerija/img15.jpg");
+}
+/* Gallery img titles */
+.gallery-img div {
+	width: 100%;
+	height: 100%;
+	background-color: #000000;
+	opacity: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.gallery-img a {
+	font-family: "Arial Black", Gadget, sans-serif;
+	font-size: 15px;
+	color: #ffffff;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+.gallery-img div:hover {
+	opacity: 0.6;
+	transition: 0.3s ease-in-out;
+}
+/* popup window when img clicked */
+.img-window {
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.8);
+	position: fixed;
+	top: 0;
+	left: 0;
+	cursor: ponter;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 2;
+}
+.img-window img {
+	max-height: 80%;
+	max-width: 80%;
+}
+
+/* buttons image */ /* TODO button class fix double styling */
+.img-btn-next {
+	display: block;
+	padding: 15px 4px;
+	border-radius: 4px;
+	background-color: #0ba39c;
+	position: fixed;
+	top : 48vh;
+	z-index: 3;
+	font-family: "Arial Black", Gadget, sans-serif;
+	color: #ffffff;
+	cursor: pointer;
+	text-transform: uppercase;
+}
+.img-btn-next:hover {
+	opacity: 0.5;
+}
+.img-btn-prev {
+	display: block;
+	padding: 15px 4px;
+	border-radius: 4px;
+	background-color: #0ba39c;
+	position: fixed;
+	top : 48vh;
+	z-index: 3;
+	font-family: "Arial Black", Gadget, sans-serif;
+	color: #ffffff;
+	cursor: pointer;
+	text-transform: uppercase;
+}
+.img-btn-prev:hover {
+	opacity: 0.5;
+}
